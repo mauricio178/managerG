@@ -1,0 +1,78 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="primary" routerLink="/login">
+      <ion-button >
+        <ion-icon name="log-out-outline" color="primary">Log Out</ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title><strong>DashBoard</strong>
+    </ion-title> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>C6BANK_2021/2022</ion-card-subtitle>
+        <ion-card-title>
+          <ion-progress-bar value="0.7"></ion-progress-bar>
+        </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <strong>36 Horas</strong><br>
+      <strong>Gerente: </strong> Bruno Costa
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>PROJECT_AMAZON_2021/2022</ion-card-subtitle>
+      <ion-card-title>
+        <ion-progress-bar value="1"></ion-progress-bar>
+      </ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <strong>Concluído</strong><br>
+      <strong>Gerente: </strong> Vanessa Torres
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+      <ion-card-header>
+        <ion-card-subtitle>TJDF_2021/2022</ion-card-subtitle>
+        <ion-card-title>
+          <ion-progress-bar value="0.2"></ion-progress-bar>
+        </ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <strong>36 Horas</strong><br>
+        <strong>Gerente: </strong> Felipe Couto
+      </ion-card-content>
+  </ion-card>
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="colaboradores" routerLink="/colaboradores">
+        <ion-icon name="people-sharp"></ion-icon>
+        <ion-label>Colaboradores</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="projetos" routerLink="/projetos">
+        <ion-icon name="map"></ion-icon>
+        <ion-label>Projetos</ion-label>
+        <ion-badge>2</ion-badge>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="inbox" routerLink="/inbox">
+        <ion-icon name="mail"></ion-icon>
+        <ion-label>Inbox</ion-label>
+        <ion-badge>6</ion-badge>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
+  
+</ion-content>
+<ion-footer>
+  
+</ion-footer>

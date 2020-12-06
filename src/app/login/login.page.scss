@@ -1,0 +1,28 @@
+ion-content { // Background
+    --background: url('../../assets/img/img1-login.png') no-repeat 100% 100%;
+    --padding-top: 20px;
+}
+
+ion-item-divider{ //divisor dos campos Email e Login 
+    opacity: 0;
+}
+
+ion-item { // Item Login e Email
+    opacity: 0.5;
+}
+
+ion-button{
+    opacity: 0.8;
+}
+ion-list{
+     opacity: 1;
+}
+
+ion-select {
+    --padding-start: 34px;
+}
+
+img{
+    opacity: 0.9;
+    
+}

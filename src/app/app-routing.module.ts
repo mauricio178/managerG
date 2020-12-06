@@ -6,11 +6,30 @@ const routes: Routes = [
     path: 'home',
     loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
   },
+
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'painel',
+    loadChildren: () => import('./painel/painel.module').then( m => m.PainelPageModule)
+  }, 
+  {
+    path: 'colaboradores',
+    loadChildren: () => import('./colaboradores/colaboradores.module').then( m => m.ColaboradoresPageModule)
+  },
+  {
+    path: 'inbox',
+    loadChildren: () => import('./inbox/inbox.module').then( m => m.InboxPageModule)
+  },
+
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'login',
     pathMatch: 'full'
   },
+ 
 ];
 
 @NgModule({

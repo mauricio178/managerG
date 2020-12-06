@@ -1,0 +1,49 @@
+<ion-header translucent="true"> 
+  <ion-toolbar>
+    <ion-title>
+      <Strong>Login Page</Strong>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <img src="../../assets/img/logo.png" class="logo.img" whidth="150">
+
+  <form>
+
+    <ion-item> 
+      <ion-icon slot="start" name="mail" color="primary"></ion-icon>
+      <ion-input inputmode="mail"  placeholder="Insira Email"></ion-input>
+    </ion-item>
+
+    <ion-item-divider></ion-item-divider>
+
+    <ion-item>  
+      <ion-icon slot="start" name="lock-open-outline" color="primary"></ion-icon>
+      <ion-input inputmode="password" placeholder="Insira Senha"></ion-input>
+    </ion-item>
+
+  <ion-item-divider></ion-item-divider>
+    
+    <ion-item>
+      <ion-icon name="analytics-outline" color="primary"></ion-icon>
+      <ion-select placeholder="Setor" value="notifications" interface="action-sheet" padding="20">
+        <ion-select-option value="pmo">Escritório de Projetos</ion-select-option>
+        <ion-select-option value="gerente" >Gerência</ion-select-option>
+        <ion-select-option value="consultor" >Consultoria</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <ion-item-divider></ion-item-divider>
+
+  </form>
+
+  <ion-button expand="full" routerLink="/painel">
+    <ion-icon name="log-in-outline" size="large" padding-></ion-icon>
+    Entrar</ion-button>
+</ion-content>
+
+<ion-footer>
+  
+</ion-footer>
